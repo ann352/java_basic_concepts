@@ -73,6 +73,7 @@ public class ListsTest {
 
         //removing elements from list in loop
         //we shouldn't use for-each loop - it is used usually used to view elements, it can cause a exception
+        //to avoid error we van add here 'break' but in for-each we can remove only one value
 
         for (Object element : names) {
             if (element.equals("Kuba")) {
