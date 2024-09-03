@@ -5,7 +5,9 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class QuequeDemo {
+
     //when the order of elements is important we use queque
+    //in queues we have access, only to the first or last element
     //is good to give the most general type of elements on the right side of expression like this:
 
     public static void main(String[] args) {
@@ -40,6 +42,7 @@ public class QuequeDemo {
             System.out.println( "Hallo " + namesFromTheEnd.pollLast());
         }
 
+        // other important methods in Deque are : poolFirst() , peekFirst(), peekLast(), void addFirst(E element), addLast(E element)
         //we have also PriorityQoe from which we can take elements regarding it's priority
 
 

@@ -1,6 +1,7 @@
 package collections.lists;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class ListsTest {
@@ -15,7 +16,7 @@ public class ListsTest {
 
         //methods used in lists, common for all collections
 
-        List<Object> names = new ArrayList<>();
+        List<String> names = new ArrayList<>();
 
         //1.add()
         names.add("Ania");
@@ -54,6 +55,12 @@ public class ListsTest {
         names.set(1, "Kuba");
         System.out.println(names);
 
+        //10.iterator()
+        Iterator<String> iterator = names.iterator();
+        while (iterator.hasNext()){
+            System.out.println(iterator.next().toUpperCase());
+        }
+
         //printing , iterating over lists
 
         //1. we can directly print list in println, because lists have own toString()
@@ -72,8 +79,9 @@ public class ListsTest {
         }
 
         //removing elements from list in loop
-        //we shouldn't use for-each loop - it is used usually used to view elements, it can cause a exception
+        //we shouldn't use for-each loop - it is used usually used to view elements, it can cause an exception
         //to avoid error we van add here 'break' but in for-each we can remove only one value
+        //generally we have problems in that loop because it is constantly smaller and we always go to the next element
 
         for (Object element : names) {
             if (element.equals("Kuba")) {

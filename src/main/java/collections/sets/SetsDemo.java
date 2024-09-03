@@ -9,6 +9,7 @@ public class SetsDemo {
     // we use sets when we wan't to have in collection unique elements (to do that, we have to override hashSet(), and equals() for our objects)
     // in sets order is not important, we can compare objects, eg: by using own implementation
     // of method equals() / hashcode() (numeric representation of object, that method is important in hashset),or by using Comparator and Comparable interfaces
+    // sets have the same methods as interface collection
 
     public static void main(String[] args) {
         Set<String> names = new HashSet<>();
