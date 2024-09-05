@@ -4,10 +4,10 @@ import java.util.Objects;
 
 public class User {
 
-    public String names, surname, email;
+    public String name, surname, email;
 
     public User(String names, String surname, String email) {
-        this.names = names;
+        this.name = names;
         this.surname = surname;
         this.email = email;
     }
@@ -29,9 +29,13 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                "names='" + names + '\'' +
+                "names='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", email='" + email + '\'' +
                 '}';
+    }
+
+    public String getName() {
+        return name;
     }
 }
