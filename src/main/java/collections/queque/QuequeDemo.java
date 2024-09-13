@@ -146,7 +146,10 @@ public class QuequeDemo {
         //or with lambda
         Comparator<Task> dateTaskComparator = (t1,t2) -> t1.timeOfCreating.compareTo(t2.timeOfCreating);
         PriorityQueue<Task> oldestQueue = new PriorityQueue<>(dateTaskComparator);
-        System.out.println(oldestQueue);
+        oldestQueue.add(new Task("AAA",3, LocalDate.of(2024,11,1)));
+        oldestQueue.add(new Task("BBB",3, LocalDate.of(2024,9,1)));
+        oldestQueue.add(new Task("CCC",3, LocalDate.of(2024,1,1)));
+        System.out.println("Sorting list considering time of creating tasks"+ oldestQueue);
     }
 }
 //we use queque when we want to remove some elements from the collection one by one by processing them
