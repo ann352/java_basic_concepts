@@ -58,12 +58,46 @@ public class ArraysTest
 
         //irregular arrays, by creating we specify only first size,
         char[][] irregularArray = new char[5][];
-        irregularArray[0]=new char[]{'A','B','C'};
-        irregularArray[1]=new char[]{'D','E','F','G','H'};
+        irregularArray[0] = new char[]{'A', 'B', 'C'};
+        irregularArray[1] = new char[]{'D', 'E', 'F', 'G', 'H'};
         System.out.println(Arrays.deepToString(irregularArray));
         //single row
         System.out.println(Arrays.toString(irregularArray[0]));
 
+        //printing board
+        int[] evenNumbers = {2, 4, 6, 8, 10, 12};
 
+        System.out.println("for loop");
+        for (int i = 0; i < evenNumbers.length; i++) {
+            System.out.println(evenNumbers[i] + " "); // wypisanie i-tego elementu z tablicy
+        }
+
+        // Arrays.toString()
+        System.out.println("Arrays.toString()");
+        System.out.println(Arrays.toString(evenNumbers));
+
+        //for-each
+        System.out.println("for-each");
+        for (int i : evenNumbers) {
+            System.out.println(i);
+        }
+
+        //printing two-dimensional array
+        //Arrays.deepToString()
+        int[][] ageOfUsers = {{18, 34, 30}, {34, 56, 28}};
+
+        System.out.println(Arrays.deepToString(ageOfUsers));
+
+        //printing with for loop
+        for (int i = 0; i < ageOfUsers.length; i++) { //loops goes over every row
+            int[] row = ageOfUsers[i]; //we assign actual row to the variable
+            for (int j = 0; j < row.length; j++) { //we iterate owe row
+                if (j == row.length - 1) {
+                    System.out.println(row[j]);
+                } else {
+                    System.out.println(row[j] + ", ");
+                }
+            }
+        }
     }
 }
