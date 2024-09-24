@@ -3,7 +3,6 @@ package enums.chests;
 public class Main {
     public static void main(String[] args) {
         printMove(ChestType.PAWN, "C4");
-
     }
 
     public static String printMove(ChestType chestType, String move){

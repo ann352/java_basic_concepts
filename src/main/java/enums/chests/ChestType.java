@@ -3,7 +3,7 @@ package enums.chests;
 public enum ChestType {
     PAWN("♟", "pawn"),
     ROOK("♜", "rook"),
-    QUEEN("♛", "quenn");
+    QUEEN("♛", "queen");
 
     private final String description;
     private final String symbol;
